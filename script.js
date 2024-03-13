@@ -1,5 +1,16 @@
 function minDate(dates) {
   //write you code here
+	let datenum=[]
+	for (let i=0;i<dates.length;i++){
+		datenum.push(new Date(dates.[i]));
+	}
+	let num=datenum[0];
+	for (let i=0;i<datenum.length;i++){
+		if (datenum[i]<num){
+			num=datenum[i];
+		}
+	}
+	console.log(num);
 }
 
 // Do not change the code
